@@ -24,7 +24,7 @@ class ApiService {
         dataTask = URLSession.shared.dataTask(with: url) { (data , response , error) in
             if let error = error {
                 completion(.failure(error))
-                print("DataTas error : \(error.localizedDescription)")
+                print("DataTask error : \(error.localizedDescription)")
                 return
             }
             
